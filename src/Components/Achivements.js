@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy, faSuitcase, faBars, faCrown } from '@fortawesome/free-solid-svg-icons';
-import Image3 from "../images/about-1.webp"
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import Image3 from "../images/about-1.webp";
 
 const Achievements = () => {
   return (
@@ -12,24 +13,28 @@ const Achievements = () => {
           <FontAwesomeIcon icon={faTrophy} />
           <h3>KelvinWeather<br />Project</h3>
           <h2>100%</h2>
+          <Link to="/kelvinweather-project">View Project</Link> {/* Updated with Link */}
         </div>
 
         <div className="achivement">
           <FontAwesomeIcon icon={faSuitcase} />
           <h3>SpotifyClone<br />Project</h3>
           <h2>100%</h2>
+          <Link to="/spotify-clone-project">View Project</Link> {/* Updated with Link */}
         </div>
 
         <div className="achivement">
           <FontAwesomeIcon icon={faBars} />
           <h3>Booking.com<br />Replica</h3>
           <h2>90%</h2>
+          <Link to="/booking-replica">View Project</Link> {/* Updated with Link */}
         </div>
 
         <div className="achivement">
           <FontAwesomeIcon icon={faCrown} />
           <h3>Portfolio<br />Website</h3>
           <h2>100%</h2>
+          <Link to="/portfolio">View Portfolio</Link> {/* Updated with Link */}
         </div>
       </div>
     </section>
@@ -46,7 +51,7 @@ const About = () => {
           interfaces, and improved code quality through reviews. This role provided me with key
           hands-on experience in web development.
         </p>
-        <a href="#">Contact Me</a>
+        <Link to="/contact">Contact Me</Link> {/* Updated with Link */}
       </div>
       <div className="about-2">
         <h2>Web Designer</h2>
@@ -57,8 +62,7 @@ const About = () => {
   );
 };
 
-
-const main = () => {
+const Main = () => {  // Renamed from "main" to "Main"
   return (
     <div>
       <Achievements />
@@ -67,4 +71,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Main;  // Exported corrected Main component

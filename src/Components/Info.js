@@ -4,8 +4,6 @@ import '../App.css';
 import Image1 from '../images/syed.jpg';
 
 const About = () => {
-  const navigate = useNavigate();
-
   // Function to handle external navigation
   const handleExternalLink = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer');

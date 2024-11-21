@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Resume = () => {
   const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ const Resume = () => {
             <div className="specialization-up-icon">
               <i className="fa-solid fa-code"></i>
             </div>
-            <a href="#">Website Design</a>
+            <Link to="#">Website Design</Link> {/* Updated with Link */}
             <p>Designs and develops visually appealing websites using HTML, CSS, and JavaScript.</p>
             <span>5 projects</span>
           </div>
@@ -43,7 +44,7 @@ const Resume = () => {
             <div className="specialization-up-icon">
               <i className="fa-solid fa-bezier-curve"></i>
             </div>
-            <a href="#">Front-End Development</a>
+            <Link to="#">Front-End Development</Link> {/* Updated with Link */}
             <p>Creates dynamic, responsive web applications with React.js for seamless user interactions.</p>
             <span>22 projects</span>
           </div>
@@ -53,7 +54,7 @@ const Resume = () => {
             <div className="specialization-up-icon">
               <i className="fa-regular fa-window-restore"></i>
             </div>
-            <a href="#">React Development</a>
+            <Link to="#">React Development</Link> {/* Updated with Link */}
             <p>Executes complex projects Booking.com replica swiftly & efficiently with focus on precision</p>
             <span>10 projects</span>
           </div>
@@ -61,7 +62,7 @@ const Resume = () => {
             <div className="specialization-up-icon">
               <i className="fa-solid fa-mobile-screen-button"></i>
             </div>
-            <a href="#">API Development</a>
+            <Link to="#">API Development</Link> {/* Updated with Link */}
             <p>Crafts intuitive, engaging interfaces to enhance user experience and ensure brand consistency.</p>
             <span>3 projects</span>
           </div>
@@ -204,13 +205,13 @@ const Resume = () => {
               <h3>I’m currently available for new projects. Feel free to reach out with any inquiries or ideas. You can contact me anytime, 24/7..</h3>
             </div>
             <div className="phone">
-              <a href="#">+923028809748</a>
+              <Link to="tel:+923028809748">+923028809748</Link> {/* Updated with Link */}
             </div>
             <div className="phone">
-              <a href="#">Murtjiznaqvi@gmail.com</a>
+              <Link to="mailto:Murtjiznaqvi@gmail.com">Murtjiznaqvi@gmail.com</Link> {/* Updated with Link */}
             </div>
             <div className="address">
-              <a href="#">Saddar-Rawalpindi</a>
+              <Link to="#">Saddar-Rawalpindi</Link> {/* Updated with Link */}
             </div>
           </div>
         </div>
