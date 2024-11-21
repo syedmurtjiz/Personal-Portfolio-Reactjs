@@ -1,18 +1,33 @@
-// HireMeButton.js
-import React from "react";
+import React from 'react';
+import SubHeader from './subHeader';
 
-const HireMeButton = () => {
-  const handleDownload = () => {
-    // Path to your file in the public folder
-    const fileUrl = process.env.PUBLIC_URL + "/path-to-your-file.pdf"; 
-    window.open(fileUrl, "_blank"); // Opens the file in a new tab
-  };
-
+const Hireme = () => {
   return (
-    <button onClick={handleDownload} className="hire-button">
-      HireMe!
-    </button>
+    <div>
+      <SubHeader />
+      
+
+        
+        <div className="resume-buttons">
+          {/* View Resume Button - Opens PDF in a new tab */}
+          <button 
+            onClick={() => window.open('/myresume.pdf', '_blank')} 
+            className="view-resume-button"
+          >
+            View Resume
+          </button>
+
+          {/* Download Resume Button - Initiates download */}
+          <a 
+            href="/myresume.pdf" 
+            download="Murtjiz_Naqvi_Resume.pdf" 
+            className="download-resume-button"
+          >
+            <button>Download Resume</button>
+          </a>
+        </div>
+      </div>
   );
 };
 
-export default HireMeButton;
+export default Hireme;

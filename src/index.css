@@ -289,3 +289,28 @@ a:hover {
   font-size: 15px;
   font-weight: 700;
 }
+
+/* Add this to your CSS file (e.g., App.css) */
+
+/* Make the resume buttons container centered */
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+}
+
+.resume-buttons button {
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #8a0d9e;
+  color: white;
+  font-size: 16px;
+  width: 61vh;
+  height: 10vh;
+  font-size: 3rem;
+  margin-bottom: 2.7rem;
+}
+
+.resume-buttons .download-resume-button {
+}

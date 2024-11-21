@@ -1549,3 +1549,55 @@ a:hover {
       background-position: 0% 50%;
   }
 }
+
+/* Container for buttons */
+/* Container for buttons */
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 54.2vh; 
+  text-align: center;
+}
+
+/* Common button styling */
+.resume-actions button {
+  padding: 15px 30px;
+  margin: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 320px;
+  height: 80px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform for scaling effect */
+}
+
+/* View Resume Button Styling */
+.view-resume-action button {
+  background-color: #8a0d9e;
+  color: white;
+}
+
+/* Download Resume Button Styling */
+.download-resume-action button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hover effect: Scaling buttons */
+.resume-actions button:hover {
+  transform: scale(1.05); /* Slightly scale the button */
+}
+
+/* Hover effect: View Resume Button */
+.view-resume-action button:hover {
+  background-color: #6f088b; /* Darker shade for hover */
+}
+
+/* Hover effect: Download Resume Button */
+.download-resume-action button:hover {
+  background-color: #45a049; /* Darker shade for hover */
+}

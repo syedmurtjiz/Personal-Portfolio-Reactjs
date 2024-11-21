@@ -2,7 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../App.css'
 import Header from "./subHeader";
-
+import Image1 from '../images/html.jpeg'
+import Image2 from '../images/js.svg'
+import Image3 from '../images/react.svg'
+import Image4 from '../images/css.png'
 const About = () => {
   return (
     <div>
@@ -83,22 +86,22 @@ const About = () => {
           <div className="skills-2">
             {/* Skill Blocks */}
             <div className="skills-image">
-              <img src="images/html.jpeg" alt="HTML" />
+              <img src={Image1} alt="HTML" />
               <h2>92%</h2>
               <p>HTML</p>
             </div>
             <div className="skills-image">
-              <img src="images/js.svg" alt="JavaScript" />
+              <img src={Image2} alt="JavaScript" />
               <h2>92%</h2>
               <p>JavaScript</p>
             </div>
             <div className="skills-image">
-              <img src="images/react.svg" alt="React.js" />
+              <img src={Image3} alt="React.js" />
               <h2>50%</h2>
               <p>React.js</p>
             </div>
             <div className="skills-image">
-              <img src="images/css.png" alt="CSS" />
+              <img src={Image4} alt="CSS" />
               <h2>92%</h2>
               <p>CSS</p>
             </div>

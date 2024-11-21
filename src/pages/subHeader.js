@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import Image from '../images/mylogo.png';
-
+import { Link, useLocation } from 'react-router-dom'; // Import useLocation
+import Image from '../images/mylogo.png'
 const SubHeader = () => {
-  const location = useLocation();
+  const location = useLocation(); // Get the current location
 
+  // Function to determine the heading based on the current route
   const getHeading = () => {
     switch (location.pathname) {
       case '/about':
@@ -15,8 +15,10 @@ const SubHeader = () => {
         return 'Portfolio';
       case '/contact':
         return 'Contact Us';
+        case '/hire':
+            return 'Hire ME!';
       default:
-        return 'Welcome';
+        return 'Welcome'; // Default heading
     }
   };
 
@@ -46,9 +48,7 @@ const SubHeader = () => {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <a href="/Profile(4).pdf" className="hire-button" target="_blank" rel="noopener noreferrer">
-                  HireMe!
-                </a>
+                <Link to="/hire" className="hire-button">HireMe!</Link>
               </li>
             </ul>
           </div>
@@ -56,17 +56,17 @@ const SubHeader = () => {
 
         <div className="sub-header-center">
           <div className="sub-header-center-heading">
-            <h2>{getHeading()}</h2>
+            <h2>{getHeading()}</h2> {/* Dynamically rendered heading */}
           </div>
           <div className="sub-header-center-body">
             <Link to="/">Home</Link>
             <i className="fa-solid fa-arrow-right"></i>
-            <p>{location.pathname.replace('/', '') || 'Home'}</p>
+            <p>{location.pathname.replace('/', '') || 'Home'}</p> {/* Display current route name */}
           </div>
         </div>
       </section>
     </div>
   );
-};
+}
 
 export default SubHeader;
