@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";  // Import Link from react-router-dom
 import Image4 from '../images/syed.jpg';
 import Image5 from '../images/booking.png';
 
@@ -13,7 +14,7 @@ const RecentProjects = () => {
         {/* Left Side */}
         <div className="recent-projects-left">
           <div className="recent-projects-1">
-            <a href="#">Booking.com Replica</a>
+            <Link to="#">Booking.com Replica</Link> {/* Use Link component */}
             <p>
               Designed and developed a website replica focusing on precision and
               clarity. This project features a comprehensive search and filter
@@ -24,9 +25,9 @@ const RecentProjects = () => {
           </div>
 
           <div className="recent-projects-2">
-            <a href="#">HTML</a>
-            <a href="#">CSS</a>
-            <a href="#">JavaScript</a>
+            <Link to="#">HTML</Link> {/* Use Link component */}
+            <Link to="#">CSS</Link> {/* Use Link component */}
+            <Link to="#">JavaScript</Link> {/* Use Link component */}
             <p>
               “The service was excellent. Template example is the next killer
               app.”

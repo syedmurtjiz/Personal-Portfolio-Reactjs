@@ -13,28 +13,24 @@ const Achievements = () => {
           <FontAwesomeIcon icon={faTrophy} />
           <h3>KelvinWeather<br />Project</h3>
           <h2>100%</h2>
-          <Link to="/kelvinweather-project">View Project</Link> {/* Updated with Link */}
         </div>
 
         <div className="achivement">
           <FontAwesomeIcon icon={faSuitcase} />
           <h3>SpotifyClone<br />Project</h3>
           <h2>100%</h2>
-          <Link to="/spotify-clone-project">View Project</Link> {/* Updated with Link */}
         </div>
 
         <div className="achivement">
           <FontAwesomeIcon icon={faBars} />
           <h3>Booking.com<br />Replica</h3>
           <h2>90%</h2>
-          <Link to="/booking-replica">View Project</Link> {/* Updated with Link */}
         </div>
 
         <div className="achivement">
           <FontAwesomeIcon icon={faCrown} />
           <h3>Portfolio<br />Website</h3>
           <h2>100%</h2>
-          <Link to="/portfolio">View Portfolio</Link> {/* Updated with Link */}
         </div>
       </div>
     </section>
