@@ -1,58 +1,56 @@
-import React from "react";
-import Image4 from '../images/syed.jpg';
-import Image5 from '../images/booking.png';
+import React from 'react';
+import { Link } from 'react-router-dom'; // Importing Link for routing
+import SubHeader from './subHeader'; // Assuming SubHeader component exists
+import '../App.css'
 
-const RecentProjects = () => {
+const Services = () => {
   return (
-    <section className="recent-projects">
-      <div className="recent-projects-head">
-        <h2>Recent Projects</h2>
-      </div>
-
-      <div className="recent-projects-main">
-        {/* Left Side */}
-        <div className="recent-projects-left">
-          <div className="recent-projects-1">
-            <a href="#">Booking.com Replica</a>
-            <p>
-              Designed and developed a website replica focusing on precision and
-              clarity. This project features a comprehensive search and filter
-              system for destinations, detailed accommodation listings, and user
-              reviews. The design emphasizes user experience and effective
-              presentation of travel information.
-            </p>
-          </div>
-
-          <div className="recent-projects-2">
-            <a href="#">HTML</a>
-            <a href="#">CSS</a>
-            <a href="#">JavaScript</a>
-            <p>
-              “The service was excellent. Template example is the next killer
-              app.”
-            </p>
-          </div>
-
-          <div className="recent-projects-3">
-            <div className="recent-projects-3-left">
-              <img src={Image4} alt="project1" />
+    <div>
+      <SubHeader />
+      <section className="specialization">
+        <div className="specialization-heading">
+          <h2>My Specialization</h2>
+        </div>
+        <div className="specialization-up">
+          <div className="specialization-1">
+            <div className="specialization-up-icon">
+              <i className="fa-solid fa-code"></i>
             </div>
-            <div className="recent-projects-3-right">
-              <h3>Syed Murtjiz</h3>
-              <p>Web Designer</p>
+            <a href="#">Website Design</a>
+            <p>Designs and develops visually appealing websites using HTML, CSS, and JavaScript.</p>
+            <span>5 projects</span>
+          </div>
+          <div className="specialization-1">
+            <div className="specialization-up-icon">
+              <i className="fa-solid fa-bezier-curve"></i>
             </div>
+            <a href="#">Front-End Development</a>
+            <p>Creates dynamic, responsive web applications with React.js for seamless user interactions.</p>
+            <span>22 projects</span>
           </div>
         </div>
-
-        {/* Right Side */}
-        <div className="recent-projects-right">
-          <div className="recent-projects-5">
-            <img src={Image5} alt="project2" />
+        <div className="specialization-down">
+          <div className="specialization-1">
+            <div className="specialization-up-icon">
+              <i className="fa-regular fa-window-restore"></i>
+            </div>
+            <a href="#">React Development</a>
+            <p>Executes complex projects Booking.com replica swiftly & efficiently with focus on precision</p>
+            <span>10 projects</span>
+          </div>
+          <div className="specialization-1">
+            <div className="specialization-up-icon">
+              <i className="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <a href="#">API Development</a>
+            <p>Crafts intuitive, engaging interfaces to enhance user experience and ensure brand consistency.</p>
+            <span>3 projects</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+    </div>
   );
 };
 
-export default RecentProjects;
+export default Services;

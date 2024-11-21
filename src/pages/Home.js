@@ -1,18 +1,20 @@
 import React from 'react'
-import About from './About'
-import Contact from './Contact'
-import Portfolio from './Portfolio'
-import Resume from './Resume'
-import Services from './Services'
-
+import Info from '../Components/Info'
+import Achivements from '../Components/Achivements'
+import Skills from '../Components/Skills'
+import RecentProject from '../Components/RecentProject'
+import Educationwork from '../Components/Education-work'
+import Header from '../Components/Header'
 const Home = () => {
   return (
    <>
-   <About/>
-   <Contact/>
-   <Portfolio/>
-   <Resume/>
-   <Services/>
+  <Header />
+  <Info />
+  <Achivements/>  
+  <Skills/>
+  <RecentProject/>
+  <Educationwork/>
+
    </>
   )
 }

@@ -1,70 +1,83 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrophy, faSuitcase, faBars, faCrown } from '@fortawesome/free-solid-svg-icons';
-import Image3 from "../images/about-1.webp"
+import SubHeader from './subHeader';
+import { Link } from 'react-router-dom';
+import '../index.css';
 
-const Achievements = () => {
-  return (
-    <section className="achive">
-      <h1>Achievements</h1>
-      <div className="achivements">
-        <div className="achivement">
-          <FontAwesomeIcon icon={faTrophy} />
-          <h3>KelvinWeather<br />Project</h3>
-          <h2>100%</h2>
-        </div>
-
-        <div className="achivement">
-          <FontAwesomeIcon icon={faSuitcase} />
-          <h3>SpotifyClone<br />Project</h3>
-          <h2>100%</h2>
-        </div>
-
-        <div className="achivement">
-          <FontAwesomeIcon icon={faBars} />
-          <h3>Booking.com<br />Replica</h3>
-          <h2>90%</h2>
-        </div>
-
-        <div className="achivement">
-          <FontAwesomeIcon icon={faCrown} />
-          <h3>Portfolio<br />Website</h3>
-          <h2>100%</h2>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const About = () => {
-  return (
-    <section className="about">
-      <div className="about-1">
-        <h1>Achievements in my <br />professional life..</h1>
-        <p>
-          I built features with HTML, CSS, JavaScript, and React.js, refined user
-          interfaces, and improved code quality through reviews. This role provided me with key
-          hands-on experience in web development.
-        </p>
-        <a href="#">Contact Me</a>
-      </div>
-      <div className="about-2">
-        <h2>Web Designer</h2>
-        <p>As a web designer, I focus on understanding user needs and goals to create effective and visually appealing websites.</p>
-        <img src={Image3} alt="About" />
-      </div>
-    </section>
-  );
-};
-
-
-const main = () => {
+const Contact = () => {
   return (
     <div>
-      <Achievements />
-      <About />
+      <SubHeader />
+      <section className="contact-section">
+        <div className="contact-form-container">
+          <div className="contact-form">
+            <div className="contact-header">
+              <h2>
+                Let’s work
+                <br /> together!
+              </h2>
+              <p>
+                I design and code beautifully simple things and I love what I do.
+                <br /> Just simple like that!
+              </p>
+            </div>
+            <div className="contact-form-group">
+              <div className="contact-form-item">
+                <input type="text" placeholder="First Name" />
+              </div>
+              <div className="contact-form-item">
+                <input type="text" placeholder="Last Name" />
+              </div>
+            </div>
+
+            <br />
+            <div className="contact-form-group">
+              <div className="contact-form-item">
+                <input type="text" placeholder="Email address" />
+              </div>
+
+              <div className="contact-form-item">
+                <input type="text" placeholder="Phone number" />
+              </div>
+            </div>
+            <br />
+            <div className="contact-form-item services-select">
+              <select id="design" name="services">
+                <option value="services">Choose Services</option>
+                <option value="ui">UI/UX</option>
+                <option value="app">App</option>
+                <option value="design">Branding Design</option>
+              </select>
+            </div>
+            <br />
+            <div className="contact-form-item">
+              <textarea name="conMessage" placeholder="Message"></textarea>
+            </div>
+            <div className="contact-submit-button">
+              <button type="submit">Send Message</button>
+            </div>
+          </div>
+
+          <div className="contact-info">
+            <div className="contact-phone">
+              <i className="fa-solid fa-phone"></i>
+              <h3>Phone:</h3>
+              <Link to="tel:+923028809748">+923028809748</Link>
+            </div>
+            <div className="contact-email">
+              <i className="fa-regular fa-envelope"></i>
+              <h3>Email:</h3>
+              <Link to="mailto:Murtjiznaqvi@gmail.com">Murtjiznaqvi@gmail.com</Link>
+            </div>
+            <div className="contact-address">
+              <i className="fa-regular fa-address-book"></i>
+              <h3>Address:</h3>
+              <Link to="#">Saddar-Rawalpindi</Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
 
-export default main;
+export default Contact;
