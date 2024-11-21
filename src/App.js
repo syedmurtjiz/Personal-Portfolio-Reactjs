@@ -1,7 +1,5 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './Components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -10,9 +8,11 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './Components/Footer';
 import Hireme from './pages/Hireme';
+
 const App = () => {
   return (
     <Router>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,9 +21,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/hire" element={<Hireme />} />
-
-       </Routes>
-       <Footer />
+      </Routes>
+      <Footer />  {/* Footer should remain outside the routes */}
     </Router>
   );
 };

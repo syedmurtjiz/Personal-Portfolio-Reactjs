@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import '../App.css'
 import Header from "./subHeader";
 import Image1 from '../images/html.jpeg'

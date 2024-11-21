@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css"; // Adjust the path to your CSS file
+import "../App.css"; 
 import htmlImage from "../images/html.jpeg";
 import jsImage from "../images/js.svg";
 import reactImage from "../images/react.svg";

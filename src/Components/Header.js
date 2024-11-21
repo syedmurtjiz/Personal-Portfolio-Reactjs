@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css'; // Import the global styles
+import '../App.css'; 
 import Images from "../images/logo.webp";
 
 const Header = () => {
